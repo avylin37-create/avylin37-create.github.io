@@ -107,19 +107,16 @@
       min-width: max-content;
     }
 
-    .brand-badge {
-      display: grid;
-      place-items: center;
-      width: 54px;
+    .brand-logo {
+      display: block;
+      width: 96px;
       height: 54px;
-      border-radius: 18px;
-      color: var(--purple);
-      background: var(--yellow);
-      border: 4px solid rgba(255,255,255,.82);
+      object-fit: cover;
+      object-position: center;
+      border-radius: 16px;
+      border: 3px solid rgba(255,255,255,.88);
       box-shadow: 0 5px 0 rgba(60,36,130,.22);
-      transform: rotate(-5deg);
-      font-size: 22px;
-      line-height: 1;
+      background: #fff;
     }
 
     .brand-text {
@@ -1746,9 +1743,10 @@
         padding: 8px 10px;
       }
 
-      .brand-badge {
-        width: 48px;
+      .brand-logo {
+        width: 78px;
         height: 48px;
+        border-radius: 14px;
       }
 
       .brand-text {
@@ -1863,7 +1861,7 @@
 <body class="student-mode">
   <header class="topbar">
     <div class="brand">
-      <div class="brand-badge">U2</div>
+      <img class="brand-logo" src="https://avyenglish.com/assets/avy-english-logo.svg" alt="Avy English Teaching System logo">
       <div class="brand-text">
         Inside 2
         <small>NEW CLASSMATES</small>
